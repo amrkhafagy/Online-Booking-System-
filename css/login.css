@@ -1,21 +1,10 @@
+
 body{
-   
-    padding-top: 10%;
-    width: 100%;
-    background-image: url(background.jpg);  
-    min-height: 90vh;
-}
-#loginForm {
-    margin-left: 63%;
-}
- h1{
-    color: black;
+  background-image: url('images/slider1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 
 }
-div{
-     text-align: center ;
-    }
-
 input[type=text], input[type=email], select {
     width: 100%;
     padding: 12px 20px;
