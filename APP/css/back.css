@@ -1,9 +1,17 @@
-/*style="align-items: center; text-align: center; justify-content: center; background-image: url(https://www.pilotpartners.com.au/wp-content/uploads/2019/08/iStock-1001713236-medical-plain.jpg);"
-     id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50"
-     style="width: 100%; margin-top: 10%; text-align: center;">>
-*/
+
 *{
     text-align: center;
     align-items: center;
     justify-content: center;
+    background-image: url('/APP/images/medical-plain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed; 
+
+}
+#appointment{
+    
+    width: 100%;
+    margin-top: 10%;
+     text-align: center;
 }
