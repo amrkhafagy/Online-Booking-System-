@@ -1,13 +1,13 @@
 const UserServices = require('../services/user.services');
-exports.registerUser = async (req,res) => {
+exports.registerUser = async (req, res) => {
 
-    var user = await UserServices.getUserByEmail({email:req.body.email});
+    var user = await UserServices.getUserByEmail({ email: req.body.email });
 
-    console.log("User",user);
-    if(user) { 
+    console.log("User", user);
+    if (user) {
         return res.status(409).json({
-            error:"User already exists "
-        }); 
+            error: "User already exists "
+        });
     }
 
     user = await UserServices.create(req.body);
@@ -16,3 +16,4 @@ exports.registerUser = async (req,res) => {
         name: user.name,
         email: user.email
     });
+};
