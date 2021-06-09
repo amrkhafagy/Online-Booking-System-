@@ -5,4 +5,11 @@ $( document ).ready(function() {
       // Prevent the form from submitting via the browser.
       event.preventDefault();
       ajaxPost();
-    });
+      });
+      function ajaxPost(){
+          
+        // PREPARE FORM DATA
+        var formData = {
+          email : $("#userName").val(),
+          password :  $("#password").val()
+        }
