@@ -29,4 +29,19 @@ $( document ).ready(function() {
           localStorage.setItem("username", customer.data.name);
 
           window.location.replace('index.html');
-        },
+            },
+            error : function(e) {
+                alert("Error!")
+                console.log("ERROR: ", e);
+              }
+        });
+           // Reset FormData after Posting
+           resetData();
+    
+    }
+    function resetData(){
+        $("#userName").val("");
+        $("#password").val("");
+      }
+  });
+        
