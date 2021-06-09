@@ -18,7 +18,8 @@ $( document ).ready(function() {
         $.ajax({
         type : "POST",
         contentType : "application/json",
-        url : 'http://localhost:3000/Api/v1/user/signin',
+        url : 'http://localhost:3000/Api/v1/user/signin',// API Base URL - the server address
+
         data : JSON.stringify(formData),
         dataType : 'json',
         success : function(customer) {
